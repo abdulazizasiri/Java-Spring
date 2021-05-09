@@ -50,3 +50,24 @@ Getting Started with Java Spring
 
 ## Why Spring Boot. 
 
+- Supports rapid development
+
+- Remove boilerplate of app setup 
+
+- Itt uses for many uses. 
+
+
+- used iin thee cloud. 
+
+## Key Component 
+
+1- Embeded Tomcat container.
+
+2- Auto-configuration of AppliactionContext
+
+3- Automatiic servlet mapping. 
+
+4- supportembedded database support and hibernate/JPA dialect. 
+
+
+5- Automatic  conttroller mapping. 
