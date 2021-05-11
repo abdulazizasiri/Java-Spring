@@ -13,7 +13,9 @@ Spring boot makes it easy to create stand-alone, production-grade Spring based a
 1- Add in the pom.xml file the parent org.springframework.boot  to let maven that this is a spring boot project.  
 
 
+
 2- Add the spring boot project. 
+
 
 
 3- Build the application. 
@@ -23,4 +25,21 @@ Spring boot makes it easy to create stand-alone, production-grade Spring based a
 4- dependenciies (JARs) will be addedd to the projecvt structure. 
 
 
-5- 
+
+### What happens when reading tne spring application. 
+
+
+- <code>  SpringApplication.run(SpringV.class, args);  </code> with its annotations does a lot of things. 
+
+
+
+1- Sets up default configuration
+
+2- Starts Spring applicatiion context. 
+
+3- performs class path scan 
+
+4- Starts Tomcat server. 
+
+
+
