@@ -45,3 +45,17 @@ Spring boot makes it easy to create stand-alone, production-grade Spring based a
 
 ### Adding a Controller. 
 
+
+There are two main annotations to use a controller. 
+
+
+1- @RestController: This definies the whole class to be  controller. 
+
+2- @RequestMapping("URL")
+
+
+Note: The controller has to be inside the main project package. 
+
+
+
+
