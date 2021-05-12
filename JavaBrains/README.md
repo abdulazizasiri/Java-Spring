@@ -56,6 +56,10 @@ There are two main annotations to use a controller.
 
 Note: The controller has to be inside the main project package. 
 
+MAIN_PROJECT --->
+                  CONTROLLER
+
+3- @RestController will return by default a JSON. 
 
 
 
