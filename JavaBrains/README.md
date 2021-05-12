@@ -59,7 +59,10 @@ Note: The controller has to be inside the main project package.
 MAIN_PROJECT --->
                   CONTROLLER
 
-3- @RestController will return by default a JSON. 
+3- @RestController will return by default a JSON since it is annottated with #RestController. 
+
+
+
 
 
 
