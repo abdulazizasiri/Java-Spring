@@ -64,5 +64,17 @@ MAIN_PROJECT --->
 
 
 
+## Spring Boot come with Embedded Tomcat Server 
+
+1- Convenience 
+
+2- Servlet container config is now application config
+
+3- Standalone applicatioin
+
+4- Useful for microservices. 
+
+
+### Unit 2: Spring MVC Controller. 
 
 
