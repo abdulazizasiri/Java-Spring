@@ -79,3 +79,40 @@ MAIN_PROJECT --->
 
 Spring MVC let us build these controllers which maps request to responses.
 
+
+### The rest aapi we will build: Course API 
+
+- Resources: We will have three different resources. 
+
+
+1- Topic,  Course,  Lesson 
+
+
+for the topics
+
+1- GET  /topics Get all topics
+
+2- GET /topics/id Get one topic
+
+3- POST /topics creaate/post a new topic
+
+4- PUT /topics/id update the topics. 
+
+5- DELETE /topics/id Deletes the topic 
+
+### Creating a business service
+
+Whaat is a business service? 
+A business service are singletons in spring. 
+
+Since a singleton is a creational pattern, it will help us creste things in spring. 
+
+
+When a spring application starts up, spring creates an instance of this service, and keeps that in the memory. 
+
+
+We can other controllers dependds on this service. 
+
+
+
+
