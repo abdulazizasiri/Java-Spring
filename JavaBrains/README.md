@@ -113,6 +113,14 @@ When a spring application starts up, spring creates an instance of this service,
 
 We can other controllers dependds on this service. 
 
+We can just import a serive whenever we want. 
 
 
 
+Note: Services need to be injeted 
+
+
+### Getting a single resource 
+
+
+in this endpoint, we want to create a method that access a resourece 
