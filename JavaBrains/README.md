@@ -124,3 +124,10 @@ Note: Services need to be injeted
 
 
 in this endpoint, we want to create a method that access a resourece 
+
+
+
+### Services
+
+
+A service is a singleton used inside one of the restcontroller. IT does one thing. It lives inside the restController memory as a provate variable. 
