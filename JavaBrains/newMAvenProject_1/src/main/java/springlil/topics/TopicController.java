@@ -29,4 +29,20 @@ public class TopicController {
         return s;
 
     }
+    @RequestMapping(method=RequestMethod.PUT, value="/topics/{id}")
+    public Success updateTopic(@RequestBody Topic topic, @PathVariable String id){
+        Success s = new Success(200, "Successful update");
+        topicService.updateTopic(id, topic);
+        return s;
+    }
+
+    @RequestMapping(method=RequestMethod.DELETE, value="/topics/{id}")
+    public Success deleteTopic( @PathVariable String id){
+        Success s = new Success(200, "Successful delete");
+        topicService.deleteTopic(id);
+        return s;
+    }
+
+
+
 }
