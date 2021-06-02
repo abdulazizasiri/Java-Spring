@@ -7,7 +7,9 @@ import javax.persistence.Id;
 public class Topic {
     @Id // This is te primary key.
     private String id;
+
     private String name;
+
     private String desc ;
 
 

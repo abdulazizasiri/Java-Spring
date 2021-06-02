@@ -155,3 +155,13 @@ JPA: Stands for Java Persistence API.
 
 This helps us create ORM. Object realtional mapping. 
 
+
+How do we tell JPA that a specific class should be marked as "Table" or entity in ORM. We give our model an annotatoin called @Entity 
+
+
+- Steps 
+
+1- Create interface which extends another interface called "CrudRepository" 
+
+2- Pass the model and the type of the id to the CrudRepository as a generic. 
+
