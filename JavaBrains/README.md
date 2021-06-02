@@ -131,3 +131,27 @@ in this endpoint, we want to create a method that access a resourece
 
 
 A service is a singleton used inside one of the restcontroller. IT does one thing. It lives inside the restController memory as a provate variable. 
+
+
+## Unit 3: Other ways to start 
+
+There are many ways to booting a spring boot project. 
+
+
+1- Create a maven project through an IDE e.g: Intellji 
+
+2- Head to the Spring-initilizer website andd create a project from there. 
+
+3- Using Spring-CLI
+
+4- using STS 
+
+
+### Unit 4: Data sources. 
+
+
+JPA: Stands for Java Persistence API. 
+
+
+This helps us create ORM. Object realtional mapping. 
+
