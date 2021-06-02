@@ -1,7 +1,11 @@
 package springlil.topics;
 
-public class Topic {
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
+@Entity
+public class Topic {
+    @Id // This is te primary key.
     private String id;
     private String name;
     private String desc ;
