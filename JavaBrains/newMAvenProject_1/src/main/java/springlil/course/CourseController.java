@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-public class TopicController {
+public class CourseController {
     @Autowired
     private TopicService topicService;
     @RequestMapping("/topics")
@@ -37,7 +37,7 @@ public class TopicController {
     }
 
     @RequestMapping(method=RequestMethod.DELETE, value="/topics/{id}")
-    public Success deleteTopic( @PathVariable String id){
+    public Success deleteTopic(@PathVariable String id){
         Success s = new Success(200, "Successful delete");
         topicService.deleteTopic(id);
         return s;
