@@ -1,4 +1,4 @@
-package springlil.topics;
+package springlil.course;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

@@ -6,33 +6,33 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 // This is a singleton
-@Service // This is a sterotype in spring.
+
+@Service
 public class TopicService {
     @Autowired
-    private springlil.topics.CourseRepository topicRepository;
+    private TopicRepository topicRepository;
 
 
-    public List<springlil.topics.Course> getTopics() {
-        List<springlil.topics.Course> listtopics = new ArrayList<>();
+    public List<Topic> getTopics() {
+        List<springlil.topics.Topic> listtopics = new ArrayList<>();
        topicRepository.findAll().forEach(listtopics::add);
 
        return listtopics;
     }
 
-    public springlil.topics.Course getTopicId(String id) {
+    public Topic getTopicId(String id) {
 //       return listOfTopics.stream().filter(topic -> topic.getId().equals(id)).findFirst().get();
 
         return topicRepository.findById(id).get();
     }
 
-    public void addTopic(springlil.topics.Course topic) {
+    public void addTopic(Topic topic) {
         topicRepository.save(topic); // SAving data.
 
     }
 
-    public void updateTopic(String id, springlil.topics.Course topic) {
+    public void updateTopic(String id, Topic topic) {
         topicRepository.save(topic); // SAving and updatedata.
-
     }
 //
     public void deleteTopic(String id) {

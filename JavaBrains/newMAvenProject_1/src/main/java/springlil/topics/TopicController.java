@@ -11,18 +11,18 @@ public class TopicController {
     @Autowired
     private TopicService topicService;
     @RequestMapping("/topics")
-    public List<springlil.topics.Course> getAllTopics(){
+    public List<Topic> getAllTopics(){
 
         return topicService.getTopics();
     }
     @RequestMapping("/topics/{id}")
-    public springlil.topics.Course getTopic(@PathVariable String id) {
+    public Topic getTopic(@PathVariable String id) {
 
         return topicService.getTopicId(id);
     }
 
     @RequestMapping(method=RequestMethod.POST, value="/topics")
-    public Success addTopic(@RequestBody springlil.topics.Course topic){
+    public Success addTopic(@RequestBody Topic topic){
         System.out.println("Topic Desc: "+topic.getDesc());
         Success s = new Success(200, "Successful post");
         topicService.addTopic(topic);
@@ -30,7 +30,7 @@ public class TopicController {
 
     }
     @RequestMapping(method=RequestMethod.PUT, value="/topics/{id}")
-    public Success updateTopic(@RequestBody springlil.topics.Course topic, @PathVariable String id){
+    public Success updateTopic(@RequestBody Topic topic, @PathVariable String id){
         Success s = new Success(200, "Successful update");
         topicService.updateTopic(id, topic);
         return s;

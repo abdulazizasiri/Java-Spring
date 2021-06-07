@@ -1,4 +1,4 @@
-package springlil.topics;
+package springlil.course;
 
 public class Success {
 
