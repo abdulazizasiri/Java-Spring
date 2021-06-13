@@ -1,38 +1,37 @@
-package springlil.course;
+package springlil.lessons;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.swing.plaf.IconUIResource;
 import java.util.ArrayList;
 import java.util.List;
 
 // This is a singleton
 
 @Service
-public class CourseService {
+public class LessonService {
     @Autowired
-    private CourseRepository courseRepository;
-    public List<Course> getCourses(String id) {
-        List<Course> listCourses = new ArrayList<>();
+    private LessonsRepository courseRepository;
+    public List<Lesson> getCourses(String id) {
+        List<Lesson> listCourses = new ArrayList<>();
 
         courseRepository.findByTopicId(id).forEach(listCourses::add);
 
        return listCourses;
     }
 
-    public Course getCourseId(String id) {
+    public Lesson getCourseId(String id) {
 //       return listOfTopics.stream().filter(topic -> topic.getId().equals(id)).findFirst().get();
 
         return courseRepository.findById(id).get();
     }
 
-    public void addCourse(Course topic) {
+    public void addCourse(Lesson topic) {
         courseRepository.save(topic); // SAving data.
 
     }
 
-    public void updateCourse(String id, Course topic) {
+    public void updateCourse(String id, Lesson topic) {
         courseRepository.save(topic); // SAving and updatedata.
 
     }

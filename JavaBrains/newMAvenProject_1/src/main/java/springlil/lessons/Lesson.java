@@ -1,11 +1,13 @@
-package springlil.course;
+package springlil.lessons;
+
+import springlil.topics.Course;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
 @Entity
-public class Course {
+public class Lesson {
     @Id // This is te primary key.
     private String id;
 
@@ -14,25 +16,25 @@ public class Course {
     private String description ;
 
 
-    public springlil.topics.Course getTopic() {
-        return topic;
+    public Course getCourse() {
+        return course;
     }
 
-    public void setTopic(springlil.topics.Course topic) {
-        this.topic = topic;
+    public void setCourse(Course course) {
+        this.course = course;
     }
 
     @ManyToOne
-    private springlil.topics.Course topic;
+    private Course course;
 
-    public Course(){
+    public Lesson(){
 
     }
-    public Course(String id, String name, String desc, String topicId) {
+    public Lesson(String id, String name, String desc, String courseId) {
         this.id = id; //
         this.name = name; //
         this.description = desc; //
-        this.topic = new springlil.topics.Course(topicId, "", ""); // This is not clear.
+        this.course = new Course(courseId, "", ""); // This is not clear.
     }
 
 

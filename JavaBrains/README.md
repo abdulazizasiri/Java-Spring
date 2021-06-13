@@ -5,7 +5,7 @@ Spring boot makes it easy to create stand-alone, production-grade Spring based a
 - Spring is not just a dependency injection framework anymore. 
 
 
-### Ways to create a a spring project.
+### Ways to create a spring project.
 
 
 - Create a maven project. (From Scratch)
@@ -22,7 +22,7 @@ Spring boot makes it easy to create stand-alone, production-grade Spring based a
 
 
 
-4- dependenciies (JARs) will be addedd to the projecvt structure. 
+4- dependenciies (JARs) will be added to the project structure. 
 
 
 

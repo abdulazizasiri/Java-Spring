@@ -13,25 +13,25 @@ public class TopicService {
     private TopicRepository topicRepository;
 
 
-    public List<Topic> getTopics() {
-        List<springlil.topics.Topic> listtopics = new ArrayList<>();
+    public List<Course> getTopics() {
+        List<Course> listtopics = new ArrayList<>();
        topicRepository.findAll().forEach(listtopics::add);
 
        return listtopics;
     }
 
-    public Topic getTopicId(String id) {
+    public Course getTopicId(String id) {
 //       return listOfTopics.stream().filter(topic -> topic.getId().equals(id)).findFirst().get();
 
         return topicRepository.findById(id).get();
     }
 
-    public void addTopic(Topic topic) {
+    public void addTopic(Course topic) {
         topicRepository.save(topic); // SAving data.
 
     }
 
-    public void updateTopic(String id, Topic topic) {
+    public void updateTopic(String id, Course topic) {
         topicRepository.save(topic); // SAving and updatedata.
     }
 //
