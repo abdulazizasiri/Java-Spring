@@ -59,4 +59,14 @@
 ### Skelton of Spring project. 
 
 
+### Spring Data 
+
+
+Most used aspect of Spring framework. 
+
+1- Provides a common set of interfaces to interact with sql and non-sql drivers. 
+
+
+2- 
+
 
