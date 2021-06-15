@@ -1,4 +1,4 @@
-### Spring boot from another pperspective. 
+### Spring boot from another perspective. 
 
 - What is Spring? 
 
