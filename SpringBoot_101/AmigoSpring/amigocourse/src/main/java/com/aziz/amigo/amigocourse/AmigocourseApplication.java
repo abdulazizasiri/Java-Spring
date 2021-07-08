@@ -9,6 +9,7 @@ public class AmigocourseApplication {
 	public static void main(String[] args) {
 		// Main method.  Starting
 		SpringApplication.run(AmigocourseApplication.class, args);
+		// Spring bootstraping  a project.
 	}
 
 }
