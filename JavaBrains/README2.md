@@ -54,7 +54,8 @@ Spring Boot makes it easy to create a stand-alone, production-grade Spring based
 ### Maven
 
 
-- Maven jars are located in the <code> pom.xml <code> file. 
+- Maven jars are located in the
+ <code> pom.xml <code> file. 
 
 
 ### Creating a spring project
