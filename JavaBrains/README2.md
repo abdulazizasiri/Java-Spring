@@ -115,3 +115,6 @@ public class CoursesApIv2Application {
 
 
 ```
+
+
+### What happens in this line <code> 		SpringApplication.run(CoursesApIv2Application.class, args); </code>
