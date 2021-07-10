@@ -245,8 +245,6 @@ public class Topic {
     }
 }
 
-
-
 ```
 
 This class has also <code>  getters and setters </code>
@@ -285,6 +283,8 @@ We will look at Spring MVC later on.
     1- Resources: Topic, Course, Lesson
 
         2- Topic resource:
-            1- <code> GET </code> /topics  which gets all topics
+            1- GET  /topics  which gets all topics
             2- GET /topics/id Get a specifc topic
-            3- 
+            3- POST /topics Create a new topics
+            4- PUT /topics/id update a specifc topic
+            5- DELETE /topics/id deletes a specifc topic
