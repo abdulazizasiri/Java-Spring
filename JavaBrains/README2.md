@@ -288,3 +288,142 @@ We will look at Spring MVC later on.
             3- POST /topics Create a new topics
             4- PUT /topics/id update a specifc topic
             5- DELETE /topics/id deletes a specifc topic
+
+
+## Creating a business service 
+
+What is a service? 
+
+I  spring, a service is a singleton. When an application starts up, spring creates an instance of the servie in memory. 
+
+The idea of a service is that we create it once and inject it in multiple controllers. 
+
+Note: When we inject a service in a controller, we are using an already created object of that service that spring created. 
+
+
+- How do we use/inject a service in a controller? 
+
+We inject it by using an annotation called <code> AutoWired </code>
+
+```java
+
+@RestController
+public class TopicController {
+
+    private TopicService topicService;
+    @RequestMapping("/topics")
+    public String getAllTopics(){
+        return "Get all topics";
+    }
+}
+
+
+```
+
+
+- So, how do we inject it in a controller? 
+
+as I just mentioned above we need to use <code> AutoWired </code>
+
+
+This is the code that does this
+
+
+```java
+
+@RestController
+public class TopicController {
+
+    @Autowired
+    private TopicService topicService;
+
+}
+
+```
+
+
+### Getting a single resourcev from the path. 
+
+
+Sometimes we want to get the a single resource based on the provided path. 
+
+There are  new annotations for that 😂. 
+
+First, we need to specify what are capturing from the URL, and we do this by adding <code> {VAR} </code>
+
+
+```java 
+
+@RequestMapping("/topics/{id}")
+
+```
+
+Then in the method associated with this url, we need to add an annotation to the paramter to let the method know that this is what we are capturing. 
+
+The annotation is <code> @PathVariable</code>
+
+```java
+
+@RequestMapping("/topics/{id}")
+public Topic getTopic(@PathVariable  String id){
+    return topicService.getTopic(id);
+}
+
+
+```
+
+
+### Posting a new resource 
+
+so far we have been doing get requests, and we know that we are using 
+
+<code> RequestMapping </code> to that, but now, we need to use <code> RequestMapping </code> a little bit differently. 
+
+We can specify a <code> POST </code> request in the requestMapping by providing extra information to the annotation such as 
+
+1- Method
+
+2- Value
+
+Like this
+
+
+```java
+
+@RequestMapping(method=RequestMethod.POST, value="/topics")
+
+
+```
+
+
+This is saying that we are targeting a post request to the url specified in the value param. 
+
+- What are we posting? 
+
+post rquests have a body which carry the information sent to the server. 
+
+
+We must have 
+
+1- Request body are serlized by default so we do not need to do that manualeey. This is done by the help of  <code> @RequestBody</code> annotation
+
+
+
+2- We need to add a header and specify the content type to be  application/json<code> Content-Type : Application/json
+ </code>
+
+```java
+  @RequestMapping(method=RequestMethod.POST, value="/topics")
+    public void addTopic(@RequestBody Topic newTopic){
+        topicService.addTopic(newTopic);
+     
+    }
+
+```
+
+
+
+
+
+
+
