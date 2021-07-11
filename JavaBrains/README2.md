@@ -423,7 +423,71 @@ We must have
 
 
 
+### Deleting and Uppdatigng resources. 
+
+Delete and put methods are almost the same. To update  we need two info
+
+1- id of the object to be updated
+
+2- the object data that needs to be changed
+
+
+```java
+
+  @RequestMapping(method=RequestMethod.PUT, value="/topics/{id}")
+    public void updateTopic(@RequestBody Topic updatedTopic, @PathVariable String id){
+        topicService.updateTopic(id, updatedTopic );
+    }
+
+```
+
+
+- For deleting, we need to only the id of the object that is need to be deleted.
+
+
+```java
+@RequestMapping(method=RequestMethod.DELETE, value="/topics/{id}")
+public void deleteTopic( @PathVariable String id){
+    topicService.deleteTopic(id );
+    }
+
+```
 
 
 
+# Unit 3 Booting Spring boot
+
+
+In this unit, we will see how to create different ways to create a spring app
+
+
+1- Spring Initializr
+
+2- CLI
+
+3- STS (Not recommended)
+
+4- (my way) use Visual Studio Code
+
+
+### customizing Spring Boot
+
+- Application.properties
+
+<code> application.properties </code> is a file in a spring project that let's you configure somethings in the project. The file is a key-value pair. One of the things that we can configure are:
+
+1- server port
+
+
+<code> server.port=8081 </code>
+
+
+There is a list of common application.properties in java spring. 
+
+They are on this like
+
+https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html
+
+
+# Unit 4 JPA 😱
 
