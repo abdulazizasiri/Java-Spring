@@ -491,3 +491,59 @@ https://docs.spring.io/spring-boot/docs/current/reference/html/application-prope
 
 # Unit 4 JPA 😱
 
+Spring Data JPA: The Data Tier
+
+- What is a JPA?
+
+It is Java Persistence API. This is a specification that helps us do ORM 
+(Object - Relational Mapping)
+
+This helps us to connect to realational database drivers, or Sql based database.
+
+The advanvtage of that is to map SQL commands to code.
+
+1- Class <-> Table
+
+
+2- Class props <-> Columns
+
+
+### Adding two dependencies to work with JPA and local database 
+
+
+```xml
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.apache.derby</groupId>
+			<artifactId>derby</artifactId>
+		</dependency>
+
+```
+
+- Spring data JPA is what allows us to create the mapping from classes to tables.
+
+
+- Derby is a local database which will let us test our  knowledge. 
+
+
+### How to create a table (Class ORM)
+
+
+- Create a model simple Pojo which is basically a java class. 
+
+
+- This model needs to be marked with an annotation that will help JPA convert it to its respective table. 
+
+- The annotation is <code>  @Entiy </code>
+
+
+- There is a propery in the class that will be used as a <code> Primary Key </code>
+
+
+- Turns out that there is a special annotation to mark this propert as a primary key. IT is  <code> @Id </code>
