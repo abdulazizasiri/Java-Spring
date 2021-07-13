@@ -333,9 +333,9 @@ This is the code that does this
 
 @RestController
 public class TopicController {
-
+    
     @Autowired
-    private TopicService topicService;
+    private TopicService topicService; // Services a
 
 }
 
@@ -543,7 +543,7 @@ The advanvtage of that is to map SQL commands to code.
 - The annotation is <code>  @Entiy </code>
 
 
-- There is a propery in the class that will be used as a <code> Primary Key </code>
+- There is a property in the class that will be used as a <code> Primary Key </code>
 
 
 - Turns out that there is a special annotation to mark this propert as a primary key. IT is  <code> @Id </code>
