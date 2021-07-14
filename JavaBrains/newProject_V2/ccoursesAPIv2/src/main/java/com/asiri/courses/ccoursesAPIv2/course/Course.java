@@ -1,21 +1,20 @@
-package com.asiri.courses.ccoursesAPIv2.topic;
+package com.asiri.courses.ccoursesAPIv2.course;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-public class Topic {
+public class Course {
     // ORM -> Object-Relational Mapping
     @Id
     private String id;
     private String name;
     private String description ;
 
-    public Topic(){
+    public Course(){
 
     }
-    public Topic(String id, String name, String description) {
+    public Course(String id, String name, String description) {
         this.id = id;
         this.name = name;
         this.description = description;

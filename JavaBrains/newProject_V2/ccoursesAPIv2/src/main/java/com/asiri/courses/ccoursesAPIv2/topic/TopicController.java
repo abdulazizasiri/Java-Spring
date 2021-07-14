@@ -24,10 +24,10 @@ public class TopicController {
     }
 
     @RequestMapping(method=RequestMethod.POST, value="/topics")
-    public Success addTopic(@RequestBody Topic newTopic){
+    public void addTopic(@RequestBody Topic newTopic){
         topicService.addTopic(newTopic);
-        Success s = new Success("200", "Added a new resource", newTopic.getId());
-        return s;
+//        Success s = new Success("200", "Added a new resource", newTopic.getId());
+//        return s;
     }
 
 

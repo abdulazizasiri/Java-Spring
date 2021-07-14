@@ -333,7 +333,7 @@ This is the code that does this
 
 @RestController
 public class TopicController {
-    
+
     @Autowired
     private TopicService topicService; // Services a
 
@@ -547,3 +547,38 @@ The advanvtage of that is to map SQL commands to code.
 
 
 - Turns out that there is a special annotation to mark this propert as a primary key. IT is  <code> @Id </code>
+
+### Repositories in Spring Data JPA
+
+The way we access JPA in spring Data JPA is by creating a serperate <code> interface </code> and make extends a special interface called  <code> CrudRepository </code>
+
+- The <code>CrudRepository </code> is an interface that has an already-built ins quries such as (update, insert, delete and get) Not need to implement these mehtod; however, If a special need for a method that is not provided by the defualt methods in the CrudRepository, then we need to do that manuelly. We will explin this in the subsequent section. 
+
+
+### Refactoring our codebase by using  a database. 
+
+
+- We will be adding an embedded database in our application, so we will delete all the code that stores data in simple data structure in the application. I will be using <code> Dorby </code> embbeded database (local storage in spring boot)
+
+
+- First, we need to create a reposioty interfce and extends the <code> CrudRepository </code> 
+
+
+```java
+
+import org.springframework.data.repository.CrudRepository;
+public interface TopicRepository extends CrudRepository<Topic, String> {
+
+}
+
+```
+
+Note: this interface does not have any methods yet. We only need the inherited methods from CrudRepository such as. Once we need to perform a complex query which involves adding relationships and joining other tables, then we will need to add our own custom method. 
+
+
+### Interacting with multiple tables (Joining)
+
+
+We need in the package which includes <code>Coursecontroller </code>, <code>Course entity </code>, <code>CourseServe </code>, and<code>CourseRepository </code> to include a link to the Topic entity since a topic has many courses. It is called a  <code>One-to-Many </code> relationship. 
+
+
