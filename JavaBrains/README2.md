@@ -591,3 +591,53 @@ Now, We have to create our own method for listing elements based on an id of ano
 -  Note: This is amazing. we can right a method inside our intrface in away that tells JPA to create our custom implementation. 
 
 This is pretty cool. 
+
+
+- Example, let's say we have an Entity one and another Enitiy two. 
+
+then we have a design that creates an entity two can have many of entity on. This relationship is called  <code> ManyToOne</code>
+
+
+Example: We have this interface which resembles Entity one.
+
+
+
+```java
+
+public interface TopicRepository extends CrudRepository<Topic, String> {
+
+}
+
+
+```
+
+
+Example of entity two which will have many of entity one.
+
+
+```java
+
+public interface CourseRepository extends CrudRepository<Course, String> {
+    // This mehtod  will be used for filttering by topic, will talk discuss it later. 
+    public List<Course> findByTopicId(String topicId);
+}
+
+
+
+```
+
+
+- The naming convnetion. 
+
+The JPA data layer has a pretty amazing way to create methods that interacrs with the database. You see that we the name of the method that fetches data based on the topic id is  <code>findByTopicId</code>. 
+
+In order for the JPA to create implementation for the methods we write inside the interface, we need to write the name of the method in s certain way. The fetch data, the first word of the method name should start with <code> find </code>, followed by <code> By </code> then whatever propery we are searcing for inside the entity for example in our example we have
+
+- <code>  findByTopicId </code> we have topic as a propery inside the  <code> Course </code> entity or class.
+
+- Topic is a class which also has more props. 
+
+- We have <code> Id </code> inside Topic which is used to find the id of a topic. 
+
+
+
