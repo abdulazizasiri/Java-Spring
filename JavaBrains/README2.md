@@ -590,4 +590,4 @@ Now, We have to create our own method for listing elements based on an id of ano
 
 -  Note: This is amazing. we can right a method inside our intrface in away that tells JPA to create our custom implementation. 
 
-This is ppretty cool. 
+This is pretty cool. 
