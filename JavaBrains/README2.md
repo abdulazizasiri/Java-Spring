@@ -582,3 +582,12 @@ Note: this interface does not have any methods yet. We only need the inherited m
 We need in the package which includes <code>Coursecontroller </code>, <code>Course entity </code>, <code>CourseServe </code>, and<code>CourseRepository </code> to include a link to the Topic entity since a topic has many courses. It is called a  <code>One-to-Many </code> relationship. 
 
 
+###  Listing records based on an ID of another table
+
+
+Now, We have to create our own method for listing elements based on an id of another table. 
+
+
+-  Note: This is amazing. we can right a method inside our intrface in away that tells JPA to create our custom implementation. 
+
+This is ppretty cool. 
