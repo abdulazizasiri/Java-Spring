@@ -163,7 +163,7 @@ A controller is:
 
     - What URL access triggers it?
 
-    - What method to run when access?
+    - What method to run when accessed?
 
 
 When to create a class and annotate it with <code> RestController </code>
