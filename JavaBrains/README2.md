@@ -641,3 +641,13 @@ In order for the JPA to create implementation for the methods we write inside th
 
 
 
+
+# Deployment and monitoring 
+
+
+### Actuator 
+
+
+#  Done
+
+
