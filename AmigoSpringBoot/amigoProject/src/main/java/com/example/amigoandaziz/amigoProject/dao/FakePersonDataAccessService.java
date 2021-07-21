@@ -1,11 +1,13 @@
 package com.example.amigoandaziz.amigoProject.dao;
 
 import com.example.amigoandaziz.amigoProject.model.Person;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+@Repository
 public class FakePersonDataAccessService  implements PersonDao {
     private static List<Person> DB = new ArrayList<>();
     @Override
