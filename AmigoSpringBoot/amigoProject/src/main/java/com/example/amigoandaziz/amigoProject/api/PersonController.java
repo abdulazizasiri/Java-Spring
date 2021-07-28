@@ -34,7 +34,7 @@ public class PersonController {
 
     @GetMapping(path = "{id}")
     public Person getPersonById(@PathVariable UUID id){
-        return personService.getPersonById(id).orElse(null);
+        return personService.getPersonById(id);
     }
 
     @DeleteMapping(path = "{id}")
