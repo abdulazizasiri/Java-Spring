@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Configuration;
 
 import java.time.LocalDate;
 import java.time.Month;
+import java.util.List;
 
 @Configuration
 public class StudentConfig {
@@ -27,12 +28,15 @@ public class StudentConfig {
                     LocalDate.of(1990, Month.FEBRUARY, 10),
                     30
                     );
-           Student Moe =  new Student(
+           Student moe =  new Student(
                     "Moe",
                     "Moe@outlook.com",
                     LocalDate.of(1980, Month.FEBRUARY, 10),
                     44
             );
+           repository.saveAll(
+                   List.of(abdulaziz, jessica, moe)
+           );
         };
     }
 }
