@@ -38,10 +38,12 @@ Both Spring and Spring Boot frameworks help to build microservices-based web app
 Whereas, Spring Boot brings all the functionality of Spring and some additional advantages, such as:
 
 1- It can automatically configure Spring and third-party libraries
+
 2- It provides necessary dependencies to ease the build configuration
 
 
 This way, Spring Boot helps to speed up application development. It is a matter of software requirements to choose between Spring and Spring Boot frameworks. Either of the frameworks can be used to build microservices-based web applications. However, Spring Boot helps to get things done faster.
+
 
 
 
