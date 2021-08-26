@@ -45,6 +45,12 @@ Whereas, Spring Boot brings all the functionality of Spring and some additional 
 This way, Spring Boot helps to speed up application development. It is a matter of software requirements to choose between Spring and Spring Boot frameworks. Either of the frameworks can be used to build microservices-based web applications. However, Spring Boot helps to get things done faster.
 
 
+### Where Spring boot shines? 
+
+Spring boot shines when you want to do the following:
 
 
+1- If your project aims to connect simultaneous users on different clients, you probably need to build a server, which Spring Boot can help with.
 
+
+2- 
