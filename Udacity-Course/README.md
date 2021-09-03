@@ -8,7 +8,7 @@ There  are three main components in a web application
 
 1- Data Storage -> How the data is stored
  
-2- Application Logic -> What kind od service provide the logic for your application 
+2- Application Logic -> What kind of service provide the logic for your application 
 
 3- Client Access  ->  What kind of client access your services 
 
@@ -53,4 +53,23 @@ Spring boot shines when you want to do the following:
 1- If your project aims to connect simultaneous users on different clients, you probably need to build a server, which Spring Boot can help with.
 
 
-2- 
+2- If your project needs a good integration with a database
+
+3- If you to render something to the clinet so, she/he can interact with it
+
+and many more
+
+However, Java is not as performant as other languages such as <code> Rust, Go, C++, C </code>
+
+
+### Course Outline
+
+- Basics of Java server architecture, dependency management in Java, and how Spring integrates with both.
+
+- Core Spring principles. We'll be covering dependency injection, bean configuration, service development, and server-wide configuration.
+
+
+- Spring MVC and Thymeleaf, an HTML template engine. We'll talk about Spring controllers, Thymeleaf template attributes, and connecting the two with the MVC pattern.
+
+
+- Connecting your Spring app to a database and securing it with Spring Security. We'll cover the basics of ORM and MyBatis, an ORM tool for Java. We'll use the database to store user credentials securely and use them to authenticate users with Spring Security.
