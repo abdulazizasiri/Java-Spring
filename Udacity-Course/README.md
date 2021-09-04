@@ -73,3 +73,51 @@ However, Java is not as performant as other languages such as <code> Rust, Go, C
 
 
 - Connecting your Spring app to a database and securing it with Spring Security. We'll cover the basics of ORM and MyBatis, an ORM tool for Java. We'll use the database to store user credentials securely and use them to authenticate users with Spring Security.
+
+
+- Testing and web browser automation with Selenium. We'll cover how to set up and run tests with JUnit, how a web driver works, and how to simulate user actions in the browser with Selenium. We'll also discuss page objects, Selenium's powerful abstraction tool.
+
+
+
+### Lesson 1: Web development in Java
+
+- Java Application Servers: We introduce the basics of server-side web development and how a Java Application Server simplifies things.
+
+
+- Java Servlets: We discuss the central feature of the Application Server, the Servlet, and how it allows developers to access the conveniences provided by the Application Server.
+
+
+- Spring Applications: We introduce Spring Framework, a collection of Java libraries and tools that build on the Application Server and Servlet to provide a huge amount of utility to Java web developers.
+
+
+- Spring Starter Packs: We discuss the various "starter packs" available through Spring Boot's project generator, which can be used to quickly get up and running with a new Spring Boot project configured for specific features.
+
+
+- Maven and the POM file: We introduce Maven, a dependency management tool for Java that allows developers to easily use powerful open-source libraries in their projects. We discuss how dependencies are declared in Maven's <code> pom.xml </code> file.
+
+### What is a web server
+
+A web server's primary goal is listening for HTTP requests and handling them with application logic sending HTTP response to the client that indicates the result of the oprtations. Simple HTTP servers host directories of HTML files directly, senfing files in their response to requests for specific URLs. This is enough for static websites with no dynamic server operations, but modern web apps support users accounts, complex interactions, and persistent data. Java application servers make these features more accessible by hosting many individual apps, managing them over a common interface, the servlet
+
+
+
+## Key Terms
+
+- HTTP: Hypertext Transfer Protocol. A binary protocol that originally defined the mechanics of requesting and sending HTML over the internet. 
+
+
+- Web Server: A program that listens for and responds to HTTP requests over the internet
+
+- Application Server: A program that hosts other applications, forwarding incoming requests to the appropriate application according to a filter. Provides shared access to resources and multi-threading.
+
+
+- Pluggable Architecture: A pluggable architecture refers to any piece of software that allows parts of it to be added, replaced, and removed. Usually, this is achieved through a common interface for every "pluggable" component. Sometimes the architecture can even replace components at runtime, as is the case with Servlets in an Application Server. 
+
+
+- Pluggable Architecture: A pluggable architecture refers to any piece of software that allows parts of it to be added, replaced, and removed. Usually, this is achieved through a common interface for every "pluggable" component. Sometimes the architecture can even replace components at runtime, as is the case with Servlets in an Application Server. 
+
+
+- Threads/Threading: These terms come from concurrent programming - a thread is essentially one track of computation, and multi-threading is running multiple threads in parallel. This gets a little complicated because your CPU has a limited number of physical cores that can process instructions in parallel, while the number of threads you can have can be many more than your computer has cores, but that's a topic for another time!
+
+
+https://www.youtube.com/watch?v=S97eKyv2b9M
