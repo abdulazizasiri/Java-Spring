@@ -86,3 +86,10 @@ Spring is an application framework, which means that instead of choosing when to
 - Spring Security, a generic authentication library for Spring that can integrate with many different credential sources and authentication protocols to automatically manage request authentication and security contexts
 
 - MyBatis, a third-party database access library that provides simple SQL/Java mapping tools that can be defined in Spring components
+
+
+- 
+
+
+
+http://www.cse.unsw.edu.au/~cs9242/15/project/index.shtml
