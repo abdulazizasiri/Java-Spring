@@ -53,4 +53,36 @@ Spring boot shines when you want to do the following:
 1- If your project aims to connect simultaneous users on different clients, you probably need to build a server, which Spring Boot can help with.
 
 
-2- 
+### Spring 
+
+
+Spring frameowrk which lies on top of servlet and app services. 
+
+Spring is many things but primarily it is an application framework. 
+
+It is not a library where you choose what api to use/invoke 
+
+
+Spring uses a inveresion of control
+
+
+- Spring Ecosystems
+
+Spring's architecture means it's natural to write reusable code!
+
+- There are many tools and libraries in Spring's ecosystem that solve a wide variety of common software development problems
+
+- Inversion of Control:
+
+
+Spring is an application framework, which means that instead of choosing when to invoke it from your application, you choose when it invokes your application code. This pattern of software development is called Inversion of Control (IoC), and it's powerful because it allows developers to develop specialized application components and use Spring to connect them with each other using dependency injection. This is good for clean, separated code and for code reuse. This is evident when looking at the vast number of Spring modules and Spring-integrated third-party tools that are available. This course focuses on a few of them:
+
+
+
+- Spring MVC, a generic web controller library for Spring that supports a wide variety of utilities to simplify the handling of HTTP requests
+
+- Thymeleaf, a third party template engine that can integrate with Spring MVC to simplify the generation of web pages as responses to HTTP requests
+
+- Spring Security, a generic authentication library for Spring that can integrate with many different credential sources and authentication protocols to automatically manage request authentication and security contexts
+
+- MyBatis, a third-party database access library that provides simple SQL/Java mapping tools that can be defined in Spring components
