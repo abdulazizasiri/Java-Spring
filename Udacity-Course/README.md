@@ -198,7 +198,15 @@ Every component in a spring app should have a well-defined purpose and set of re
 
 1- Data Type classes: These are simple classes that are used to store/represent complex data
 
+- These classes are created on-demand
 
 2- Components: Components are Persistent services.  These are classes that get created to be managed by the Spring
 
+- These classes are initlized by Spring Startup
 
+
+### How does Spring implement IoC
+
+- Spring scans your code for components
+
+- Spring initilizes and stores them in the application context
