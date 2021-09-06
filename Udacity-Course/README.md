@@ -89,6 +89,30 @@ Spring is an application framework, which means that instead of choosing when to
 
 
 
+### Project Starter Pack 
+
+
+Maven: is a dependencyy management system. 
+
+Spring is a collection of open-source libraries that solve common web development problems. But how do we get those libraries? In this course, we'll be using Maven, a dependency management tool that lets us define dependencies on open-source libraries based on their names and version numbers. We define those in a file in our projects called pom.xml, which Maven reads and uses to download the required libraries. We can also have our projects inherit dependencies from some base project, which is a feature that Spring Boot uses to make setting up a new Spring project easy as pie. We'll be using Spring Initializr, an online project generator, to choose specific Spring dependencies to add to new Spring projects.
+
+
+
+- Key Terms
+
+
+MAVEN:  A dependency management system and project build tool for Java. Provides a standardized way to define dependencies between projects and include them in the project build path.
+
+
+- POM: The Project Object Model that Maven uses to represent the dependency and build configuration of a project. Usually, this refers to the pom.xml configuration file found in a Maven project.
+
+
+- Dependency Management System: Any tool that automates the downloading and linking of external packages to a software development project. Most languages these days either provide one officially or have a community-accepted standard.
+
+
+
+
+
 
 
 http://www.cse.unsw.edu.au/~cs9242/15/project/index.shtml
