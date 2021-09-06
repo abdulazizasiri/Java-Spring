@@ -185,4 +185,20 @@ MAVEN:  A dependency management system and project build tool for Java. Provides
 
 
 http://www.cse.unsw.edu.au/~cs9242/15/project/index.shtml
->>>>>>> 22fc480e65129add6bdb331371c6df7b084ad4ac
+
+### What is Spring? 
+
+As a Spring developer, your responsiblity is to decide what components your application needs.
+
+Every component in a spring app should have a well-defined purpose and set of responsiblites, which should overlap as little as possible
+
+
+- There are two primary types of Java classes that we need to implement in a spring app
+
+
+1- Data Type classes: These are simple classes that are used to store/represent complex data
+
+
+2- Components: Components are Persistent services.  These are classes that get created to be managed by the Spring
+
+
