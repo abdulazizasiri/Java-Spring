@@ -210,3 +210,42 @@ Every component in a spring app should have a well-defined purpose and set of re
 - Spring scans your code for components
 
 - Spring initilizes and stores them in the application context
+
+
+Key Terms:
+
+- Separation of Concerns:
+
+ A code organization philosophy that emphasizes single-purpose components. In Java and Spring, this means keeping all methods related to a specific problem domain in the same class, for the sake of maintainability and reducing code reuse.
+
+- Data Types classes: Sometimes called POJOs (plain-old-java-objects), Data Types are classes in application designed purely to hold structured application data, like users, profiles, or anything else an application might manage. These objects are helpful for us to maintain a good conceptual model of an application, and are created and accessed frequently during execution.
+
+- Components: Components are persistent class instances managed by Spring in an application. They usually resemble libraries more than typical objects, with methods that must be called to perform specific actions. Components are only created when Spring is configured to create them, usually at server startup.
+
+## How does spring implements IoC
+
+
+- Spring Scans Your Code for Components
+
+- Spring Initilizes and store them in the Application context
+
+
+### What is an application Context? 
+
+an application context is a a data structure (usually a map) and it can be queried at runtime to find specific components when needed. This is a closed system, so components instantiated outside of Spring won't automatically be injected with dependencies like those instantiated by Spring. Mind the new keyword!
+
+### What is an Closed System? 
+
+Beans in the Application Context are only aware of other beans in the same context. 
+
+### How we should use Spring's IoC implementation
+
+- We need to tell Spring which components our applications needs, and how they depend on one another
+
+
+- We'll use annotations provided by Spring to configure those components directly in the Java Code. 
+
+
+### Popular annotations
+
+- <code> @SpringBootApplication </code> tells spring that this is a starting point. 
