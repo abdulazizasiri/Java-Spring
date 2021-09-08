@@ -248,4 +248,12 @@ Beans in the Application Context are only aware of other beans in the same conte
 
 ### Popular annotations
 
-- <code> @SpringBootApplication </code> tells spring that this is a starting point. 
+- <code> @SpringBootApplication </code> tells spring that this is a starting point. The <code> SpringBootApplication </code> is equivalent to three other annotation 
+
+1- <code> @Configuration </code>
+
+2- <code> @EnableAutoConfiguration </code>
+
+3- <code> @ComponentScan</code>
+
+The @SpringBootApplication configures Spring's component scanning and auto-configuration.
