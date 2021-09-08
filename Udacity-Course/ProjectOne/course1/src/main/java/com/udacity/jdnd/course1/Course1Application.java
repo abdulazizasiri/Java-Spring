@@ -6,20 +6,35 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
-@SpringBootApplication
+//@SpringBootApplication
 // This annotation is 3 other combined annotations: @Configuration, @ComponentScan,  @EnableAutoConfiguration
-@EnableAutoConfiguration
+@SpringBootApplication
 public class Course1Application {
 
 	public static void main(String[] args) {
+//		Course1Application.counthars("hello");
 		SpringApplication.run(Course1Application.class, args);
 	}
 
-	@Bean
-	public String nameServices(){
+	@Bean //  Register application context - Spring container ---> Object --> Run
+	@Primary
+	public String nameServices() {
 		System.out.println("Hello all"); //
 		return "Hello all";
+	}
+
+	@Bean //  Register application context - Spring container ---> Object --> Run
+	public String nameServices2(){
+		System.out.println("My name is Abdulaziz"); //
+		return "Aziz is the best of  all";
+	}
+
+	@Bean
+	public static int counthars(String msg) { // Parametr ->
+		System.out.println(msg.length());
+		return msg.length();
 	}
 
 }
