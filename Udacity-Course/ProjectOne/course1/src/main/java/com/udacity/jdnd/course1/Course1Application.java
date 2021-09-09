@@ -19,7 +19,6 @@ public class Course1Application {
 	}
 
 	@Bean //  Register application context - Spring container ---> Object --> Run
-	@Primary
 	public String nameServices() {
 		System.out.println("Hello all"); //
 		return "Hello all";
@@ -32,9 +31,9 @@ public class Course1Application {
 	}
 
 	@Bean
-	public static int counthars(String msg) { // Parametr ->
-		System.out.println(msg.length());
-		return msg.length();
+	public static int counthars(String nameServices2) { // Parametr ->
+		System.out.println(nameServices2.length());
+		return nameServices2.length();
 	}
 
 }
