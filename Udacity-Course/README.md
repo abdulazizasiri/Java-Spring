@@ -321,4 +321,25 @@ Component annotations are annotations that identify application components for S
    This annotation distinguishes the annotated bean method as the default dependency of its type. This is used to resolve conflicts that arise from having multiple bean definitions of the
 
 
-   - @Qualifier: This annotation distinguishes the annotated bean method or dependency declaration as a qualified bean or dependency. Qualified beans are considered for unqualified dependencies, but only matching qualified beans are considered for qualified dependencies. You can read more about it
+   - @Qualifier: This annotation distinguishes the annotated bean method or dependency declaration as a qualified bean or dependency. Qualified beans are considered for unqualified dependencies, but only matching qualified beans are considered for qualified dependencies. You can read more about it.
+
+
+## Key Terms
+
+- Onion Architecture:
+
+ An architectural pattern in which an application is separated into nested layers. In order for a request to be processed by the application, it must first travel through an outer layer of external interfaces and controllers, then through a middle layer of services and business logic, and finally through a persistence layer of data access objects. The separation of these layers emphasizes clean separation of concerns.
+
+
+ - Application Component:
+
+  In Spring, this is any @Component-annotated class that is instantiated by Spring and placed in Spring's application context. Architecturally speaking, this is a logical unit of an application - a single-purpose library or object that solves a particular problem an application faces. 
+
+
+- Service: 
+
+In Spring, this is any @Service-annotated class, handled identically to an @Component-annotated class. The difference between the two is semantics - a component is the most generic type of bean, and can be any kind of shared application structure. A service is specifically a collection of library methods that manage one aspect of an application's business logic. For example, a UserService would expose high-level actions related to the users of an application, and an AuthenticationService would expose actions for registering and authenticating a user. Services represent the middle layer of an onion architecture, and should contain the bulk of an application's business logic.
+
+- Repository: 
+
+In Spring, an @Repository-annotated class is treated identically to an @Component-annotated one, but as with @Service, the semantics are different. In an onion architecture, repositories are the inner layer - each repository should act like an interface to a specific set of stored or persistent data. For example, a UserRepository would expose an interface capable of create/read/update/delete and query operations on the users table of the database.
