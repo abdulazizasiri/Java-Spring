@@ -310,3 +310,15 @@ Component annotations are annotations that identify application components for S
   - @Bean: 
   
   A method annotated with @Bean inside of a configuration class will be used by Spring to generate a bean of the method's return type. This means that the developer can manually configure beans to be included in the application context.
+
+
+  - @EnableAutoConfiguration:
+  
+   A class annotated with @EnableAutoConfiguration tells Spring to try to automatically match beans to dependencies based primarily on type. This reduces the need for boilerplate code explicitly identifying individual beans as dependencies.
+
+
+   - @Primary: 
+   This annotation distinguishes the annotated bean method as the default dependency of its type. This is used to resolve conflicts that arise from having multiple bean definitions of the
+
+
+   - @Qualifier: This annotation distinguishes the annotated bean method or dependency declaration as a qualified bean or dependency. Qualified beans are considered for unqualified dependencies, but only matching qualified beans are considered for qualified dependencies. You can read more about it
