@@ -343,3 +343,19 @@ In Spring, this is any @Service-annotated class, handled identically to an @Comp
 - Repository: 
 
 In Spring, an @Repository-annotated class is treated identically to an @Component-annotated one, but as with @Service, the semantics are different. In an onion architecture, repositories are the inner layer - each repository should act like an interface to a specific set of stored or persistent data. For example, a UserRepository would expose an interface capable of create/read/update/delete and query operations on the users table of the database.
+
+
+### Spring MVC and Thymeleaf
+
+- MVC and You:
+
+ We introduce the model-view-controller pattern and discuss how Spring MVC adapts it for use on the web.
+
+- HTML Templates and Thymeleaf: 
+
+We look at how Thymeleaf's HTML templates work and how we can populate them with data using Spring controllers.
+
+
+- Connecting Controllers to Templates:
+
+ We dive deeper into the relationship between controllers and templates to see how to bind
