@@ -424,3 +424,32 @@ MVC is an abstract pattern, though, and every library implements it differently.
 
 
 - HTML templates are the views - each one represents a specific screen or screen component that the user is shown.
+
+### Key Terms
+
+  - MVC:
+  
+   MVC is an acronym that stands for Model-View-Controller, and it's a common software pattern for user interface design
+    Model: in MVC, the Model is responsible for maintaining the state of an application,
+
+- View: in MVC, the View is responsible for displaying the UI to the user, Controller: in MVC, the Controller is responsible for processing user actions (sent from the View) to update the Model, and for forwarding those updates back to the View
+    
+- Template: 
+In software development, templates are used in many different contexts - in general, they are a way to define some often-repeated or reused text or code in a specific format, like HTML, along with code hooks that indicate portions of the template that should be replaced dynamically when the template is rendered. In our context, we mostly use Thymeleaf's HTML templates, which mostly look like plain HTML with a few extra Thymeleaf-specific attributes. These attributes are our code hooks, and allow us to define what data Thymeleaf uses when generating the final HTML from our template.
+
+
+### Template
+
+
+- th:text
+
+- th:each
+
+- th:unless
+
+
+### Key Terms
+
+- Form-Backing Object:
+
+ This is a term used by Spring MVC and Thymeleaf to mean an object that represents the data contained in a form. On the Spring side, this is usually an additional argument to the relevant Controller method, and on the Thymeleaf side, this is referred to in the th:object attribute on the form.
