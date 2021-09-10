@@ -8,6 +8,10 @@
     <title>Document</title>
 </head>
 <body>
-
+<h1 th:each="msg: ${greetings}"
+    th:text="${msg}"
+    th:unless="${msg.contains('goodbye')}">
+    Hello, homepage!
+</h1>
 </body>
 </html>

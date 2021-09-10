@@ -14,7 +14,6 @@ import org.springframework.context.annotation.Primary;
 public class Course1Application {
 
 	public static void main(String[] args) {
-//		Course1Application.counthars("hello");
 		SpringApplication.run(Course1Application.class, args);
 	}
 //
