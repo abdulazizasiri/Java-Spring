@@ -358,4 +358,4 @@ We look at how Thymeleaf's HTML templates work and how we can populate them with
 
 - Connecting Controllers to Templates:
 
- We dive deeper into the relationship between controllers and templates to see how to bind
+ We dive deeper into the relationship between controllers and templates to see how to bind data from a web form to a controller method.
