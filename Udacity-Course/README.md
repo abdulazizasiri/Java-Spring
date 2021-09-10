@@ -307,7 +307,7 @@ Component annotations are annotations that identify application components for S
 
   A configuration annotation has the ability to extend the application context. 
 
-  - @Bean: 
+  - <code> @Bean </code>: 
   
   A method annotated with @Bean inside of a configuration class will be used by Spring to generate a bean of the method's return type. This means that the developer can manually configure beans to be included in the application context.
 
