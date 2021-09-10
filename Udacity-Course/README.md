@@ -359,3 +359,68 @@ We look at how Thymeleaf's HTML templates work and how we can populate them with
 - Connecting Controllers to Templates:
 
  We dive deeper into the relationship between controllers and templates to see how to bind data from a web form to a controller method.
+
+
+ ### Spring MVC
+
+The figure above shows the relationship between Spring MVC and the client. Spring MVC uses HTML templates and application data to render a view for the client browser to display. The view exposes certain actions to the user, which when triggered are sent to Spring MVC, which processes the actions and renders new views for the client.
+
+The figure is in the same file directory. 
+
+
+### Interacting with a simple web application
+
+In a web application, there are two components: the client that sends HTTP requests, and the server, which sends HTTP responses back. In the case of a web browser client, the responses the server sends need to be in the format of HTML, the document language of the web. The HTML that is sent to the client both defines the data that the user sees, as well as the actions a user can take - things like buttons, links, and input forms are all part of what the server is responsible for generating.
+
+This process of generating an entire UI from HTML would be tedious if we had to do it by hand. Luckily, we don't have to - Thymeleaf is an HTML template engine that, when used with Spring MVC, can simplify things greatly.
+
+### HTML templates
+
+HTML templates are essentially just HTML files with special tags and attributes that can be combined with a data model by a template engine like Thymeleaf to generate fully functional HTML documents. Spring MVC provides a standard way to choose a template and supply the necessary data model when a request comes in, which allows for a truly dynamic user experience.
+
+
+### Key Terms
+
+
+- <code >GET </code> Request: an HTTP request for data at a specific URL. This type of request cannot include any additional data.
+
+
+- <code>  POST </code>Request: and HTTP request that usually represents "posting" new data to the server. This is a common catch-all request method used for many data-bearing requests to the server.
+
+- <code> POST </code> Request: and HTTP request that usually represents "posting" new data to the server. This is a common catch-all request method used for many data-bearing requests to the server.
+
+
+-  <code> Dynamic </code>: Something that is dynamic changes in response to external stimuli. In the case of HTML templates, dynamic sections of the template are ones that can be replaced or configured with data on-demand.
+
+
+- <code> Static </code>: Something that is static does not change. In the case of HTML templates, static sections of the template are the ones that cannot be changed and will be the same no matter what data is used with the template.
+
+
+### BAsic Interactions
+
+
+- User Navigates to the App for the first  time.
+
+
+- User Navigates within the app (to different View)
+
+
+- Userr submits Data through a form ti the App
+
+
+
+### Spring MVC 
+
+MVC is an acronym that stands for Model-View-Controller, and it's a common software pattern for user interface design. Traditionally, it divides the roles of components in an app into three layers:
+
+- Model, which is responsible for maintaining the state of an application,
+
+- View, which is responsible for displaying the UI to the user,
+
+- Controller, which is responsible for processing user actions (sent from the View) to update the Model, and for forwarding those updates back to the View
+
+MVC is an abstract pattern, though, and every library implements it differently. Spring MVC is built around the browser as a platform, and it organizes these roles like this:
+
+
+
+- HTML templates are the views - each one represents a specific screen or screen component that the user is shown.
