@@ -575,3 +575,7 @@ See figure mybatis-mappers.png
 - @Select, @Insert, @Update, @Delete: Annotations representing SQL statements to be executed. Each annotation takes a string for a SQL statement of the corresponding type. For example, a @Select annotation takes a string for a SQL SELECT statement.
 
 - @Options: Annotation providing access to switches and configuration options for JDBC statements.
+
+
+
+- Salt: random data that is combined with the input string when hashing so that the resultant hashed values are unique for each row. This means that two users with the same password would not have the same hash in the database.
