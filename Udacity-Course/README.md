@@ -466,3 +466,49 @@ In software development, templates are used in many different contexts - in gene
 We introduce MyBatis, a dead-simple ORM tool for Java that integrates well with Spring. We discuss the "Mapper" classes MyBatis wants us to design to access the database.
 
 - Practical Example - User Credentials and Authentication: As a motivating example for using ORM, we discuss how to implement basic login security with a User table, MyBatis, and Spring Security. We walk through a lengthy sample project that implements the entirety of this motivating example.
+
+
+### Critical Questions
+
+- what data should be stored in a datanase? 
+
+- How should the database be structured? 
+
+- What data should persist? 
+
+### How should we strucutred ifferent types of data?
+
+How Should Data be Structured?
+
+- Intuitively. Most data can be stored in a similar format to the data objects that represent it in Java, with attributes matching column names.
+
+- Differing. Some data must be stored differently for security reasons, such as encrypted passwords. Other data may require a different format for efficient storage, such as large files.
+
+
+### Thinking about Security
+
+The main question to ask is: “What pages can a user access?”
+
+User-Specific Data
+
+Generally Accessible (Unsecured) Data
+
+May Vary by Domain
+
+
+### ORM is the norm
+
+The first step in using ORM is to define the data model. Consider the relationship between the following tables:
+
+
+- user - A table containing the user ID, username, and password for each user.
+
+
+
+- user_cart - 
+
+We are assuming, any user can have one cart at max. The cart would have multiple items (inventory). This table stores the user ID, inventory ID, and the quantity of inventory the user wants to purchase. In this table, the user ID, and inventory ID are the foreign keys respectively. Together, the combination of the user ID and inventory ID can act as a primary key.
+
+- inventory - 
+
+It stores the inventory ID, name, and unit price of each inventory.
