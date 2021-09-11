@@ -512,3 +512,66 @@ We are assuming, any user can have one cart at max. The cart would have multiple
 - inventory - 
 
 It stores the inventory ID, name, and unit price of each inventory.
+
+
+### MyBatis Mappers 
+
+MyBatis provides a shallow ORM layer over JDBC (Java Database Connectivity). That means it helps map your Java objects to queries that save and retrieve data using JDBC.
+
+MyBatis is mostly used through interface definitions. MyBatis automatically generates classes that implement the interface and makes them available as Spring beans. This is an example interface that defines a MyBatis Mapper.
+
+
+```java 
+
+@Mapper
+public interface UserMapper {
+   @Select("SELECT * FROM USERS WHERE username = #{username}")
+   User getUser(String username);
+}
+
+```
+
+This code above uses #{username} to identify the username parameter. It's like Thymeleaf parameters, but for SQL!
+
+
+There are additional annotations for  <code> @Insert  </code>,  <code> @Update </code>, and  <code>@Delete  </code>s well. See the further research section below the next video for more info on ways to configure MyBatis.
+
+
+
+- Insert statement
+
+
+```java
+
+@Mapper
+public interface UserMapper {
+   @Insert("INSERT INTO USERS (username, salt, password, firstname, lastname) " +
+           "VALUES(#{username}, #{salt}, #{password}, #{firstName}, #{lastName})")
+   @Options(useGeneratedKeys = true, keyProperty = "userId")
+   int insert(User user);
+}
+
+
+
+```
+
+
+This example also demonstrates the @Options annotation. @Insert normally returns an integer that is the count of rows affected. By using the @Options annotation, we're telling MyBatis that we want to automatically generate a new key and put it in userId. Now the method will return the new userId once the row has been inserted.
+
+
+All we have to do to use these methods is inject beans for this interface into our services and MyBatis will automatically create the code for the JDBC requests!
+
+
+- Where MyBatis in the Onion archtiecture
+
+MyBatis Mappers Lie at the Center of Our Onion Architecture
+
+The diagram above shows that MyBatis Mappers lie at the center of our onion architecture. Remember, that means that the only beans that should have dependencies on them are in the next layer up, services.
+
+See figure mybatis-mappers.png 
+
+### Key Terms
+
+- @Select, @Insert, @Update, @Delete: Annotations representing SQL statements to be executed. Each annotation takes a string for a SQL statement of the corresponding type. For example, a @Select annotation takes a string for a SQL SELECT statement.
+
+- @Options: Annotation providing access to switches and configuration options for JDBC statements.
