@@ -575,3 +575,28 @@ See figure mybatis-mappers.png
 - @Select, @Insert, @Update, @Delete: Annotations representing SQL statements to be executed. Each annotation takes a string for a SQL statement of the corresponding type. For example, a @Select annotation takes a string for a SQL SELECT statement.
 
 - @Options: Annotation providing access to switches and configuration options for JDBC statements.
+
+
+
+### Practical Example: User Credentials and Authentication
+
+
+Secure Data practice
+
+
+1- Assume your database will be breached, so we cannot store our 
+
+data in plain-text. We have to use an encryption method for our sensetive data. 
+
+
+- Authentication in a web application
+
+
+User support is a common feature in web applications, which means that a user can register an account and use credentials to login to the application in the future.
+
+It's important to design databases with the assumption that they will someday be breached, and so we cannot store passwords or other secret credentials in plain text. Two approaches to storing passwords are:
+
+- Encryption: Modifying data before storing it, with the intention of using another algorithm to return the data to its original form once it needs to be used.
+
+- Hashing: Modifying data before storing it with the intention of never returning it to its original form. The modified data will be compared to other modified data only.
+
