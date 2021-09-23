@@ -28,7 +28,83 @@ APIs and microserrvices are evloutions of WS
 REST stands for REpresentational State Transfer. It’s a set of guidelines application developers use to design APIs.
 
 
-Data and functionality in the API are considered “resources” and identified through something called the URI, or Uniform Resource Identifier. These are accessed by web links.
-Resources are manipulated using a fixed set of operations. GET retrieves a resource. POST creates one. Use PUT to update the resource, and of course, DELETE will remove it.
-Resources can be represented in multiple formats, such as HTML, XML, plain text, and other formats defined by a media type.
-Communication between the client and server (i.e. endpoint) is stateless. This means the server will not remember or store any state about the client that made the call.
+- Data and functionality in the API are considered “resources” and identified through something called the URI, or Uniform 
+Resource Identifier. These are accessed by web links.
+
+- Resources are manipulated using a fixed set of operations. GET retrieves a resource. POST creates one. Use PUT to update the resource, and of course, DELETE will remove it.
+
+- Resources can be represented in multiple formats, such as HTML, XML, plain text, and other formats defined by a media type.
+
+- Communication between the client and server (i.e. endpoint) is stateless. This means the server will not remember or store any state about the client that made the call.
+
+
+The REST API has the following components:
+
+- Controller - LocationController.java
+
+- Service - LocationService.java and LocationServiceImpl.java
+
+- CRUD Repository - LocationRepository.java
+
+- Domain Entity/Model - Location.java
+
+- H2 Database accessible via http://localhost:8080/h2/
+
+- Tomcat Server accessible via http://localhost:8080
+
+
+### Graphql 
+
+
+- It is a query language for APIs
+
+
+- Describes how to ask for Data
+
+- The benefits of it is that it lets the client specifies what it needs exactly
+
+
+
+### Schemas 
+
+The schema has the following
+
+
+- Defines data points
+
+- Data types
+
+- Relationships
+
+
+- Operations
+
+
+- Queries and mutations 
+
+Example of a schema:
+
+
+```js 
+
+type Location {
+ id: ID!
+ name: String!
+ address: String!
+}
+
+type Query {
+ findAllLocations: [Location]!
+}
+
+type Mutation {
+ newLocation(name: String!, address: String) : Location!
+ deleteLocation(id:ID!) : Boolean
+ updateLocationName(newName: String!, id:ID!) : Location!
+}
+
+
+```
+
+### Adding Graphql dependency 
+
