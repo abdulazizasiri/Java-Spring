@@ -167,3 +167,44 @@ graphiql.endpoint=/graphql
 graphiql.mapping=graphiql
 
 ```
+
+
+
+### Microservices
+
+Microservices architecture (MSA) dividedthe/decomposes services into discrete individual standalone components that can communicate among themselves working together orwith exterenal systems.
+
+MSA benefits:
+
+
+1- Agile framework
+
+2- Flexiable due to language support and ccommunication
+
+3- Easy to write,test, deploy and share
+
+4- Scale to load and demand
+
+5- Resilienct systems
+
+
+### Characteristics
+
+- Scope of the interface
+
+- Single purpose
+
+- Simple interface 
+
+- Modular and independent
+
+- Isolated persistence
+
+
+### Eureka
+
+The first part in having microservice development is to first have a service registry. 
+
+Eureka is an open source service registry that Netflix has created and made open source.
+
+Spring has incorporated Eureka into Spring Cloud, making it even easier to stand up a Eureka server.
