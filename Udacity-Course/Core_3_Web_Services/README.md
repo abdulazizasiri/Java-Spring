@@ -108,3 +108,62 @@ type Mutation {
 
 ### Adding Graphql dependency 
 
+There are some dependency that have to be added manuelly to the Pom file.
+
+```xml
+
+<dependency>
+            <groupId>com.graphql-java</groupId>
+            <artifactId>graphql-spring-boot-starter</artifactId>
+            <version>5.0.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.graphql-java</groupId>
+            <artifactId>graphql-java-tools</artifactId>
+            <version>5.2.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.graphql-java</groupId>
+            <artifactId>graphiql-spring-boot-starter</artifactId>
+            <version>5.0.2</version>
+        </dependency>
+
+```
+We will have a different project structure as follows:
+
+1- entity
+
+2- exceptions
+
+3- mutator
+
+4- respositry
+
+5- resolver
+
+6- service
+
+7- controller 
+
+
+- We may also add the following to the projeect in the propert file
+
+
+```java 
+
+
+spring.h2.console.enabled=true
+spring.h2.console.path=/h2
+spring.datasource.url=jdbc:h2:mem:dogdata
+
+graphql.servlet.mapping=/graphql
+graphql.servlet.enabled=true
+graphql.servlet.corsEnabled=true
+
+graphiql.enabled=true
+graphiql.endpoint=/graphql
+graphiql.mapping=graphiql
+
+```
