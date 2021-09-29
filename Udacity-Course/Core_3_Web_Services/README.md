@@ -208,3 +208,47 @@ The first part in having microservice development is to first have a service reg
 Eureka is an open source service registry that Netflix has created and made open source.
 
 Spring has incorporated Eureka into Spring Cloud, making it even easier to stand up a Eureka server.
+
+Eureka consists of a server and a client-side component. The server component will be the registry in which all the microservices register their availability. The microservices use the Eureka client to register; once the registration is complete, it notifies the server of its existence.
+
+
+### Features
+
+<code> Spring data rest </code> : 
+
+- makes it easy to expose microservices
+
+- No tedious boilerplate code
+
+- No need for @RestController  and @RequestMapping
+
+- SDR (in short for Spring data rest), is built on top of Spring Data Repositories
+
+
+- Export as REST resources
+
+### How it works (SDR)
+
+- When the application starts up, it locates all Spring data repositories
+
+- It creates an endpoint that matches the entity name
+
+
+
+- Append an 'S' in the entity name
+
+- Automatically exposes CRUS operations as restful apis over HTTP
+
+
+In a nutshell, 
+
+
+So how does Spring Data Rest work?
+
+1- At application startup, Spring Data Rest finds all of the spring data repositories
+
+2- Then, Spring Data Rest creates an endpoint that matches the entity name
+
+3- Next, Spring Data Rest appends an S to the entity name in the endpoint
+
+4- Lastly, Spring Data Rest exposes CRUD (Create, Read, Update, and Delete) operations as RESTful APIs over HTTP
