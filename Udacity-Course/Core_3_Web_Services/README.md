@@ -269,4 +269,39 @@ Authorization is the next step after authentication. So once a client is authent
 
 ### Basic Authentication 
 
+- Simple protocol for authentication
+
+- Requires a username and password
+
+- Single Base 64-encoded  value: 
+
+- Server compares: IF checked, then
+
+- Approves or denies access
+
+
+### REST
+
+
+
+### SOAP
+
+
+
+## Documentations 
+
+
+One of the popular API documentation specification is <code> OpenAPI </code> formally known as the Swagger specifications
+
+OpenAPI allows: 
+
+1- Descibe our API using JSON or YAML 
+
+2- Describe avaliable endpoints
+
+3- Operations with parameters
+
+4- Authentication methods
+
+5- Contact info about your API
 
