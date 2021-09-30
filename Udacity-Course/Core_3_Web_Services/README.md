@@ -305,3 +305,18 @@ OpenAPI allows:
 
 5- Contact info about your API
 
+- Swagger: allows us to
+
+1- Design, build, document, consume REST APIs
+
+2- SpringFX is a swagger integeration for the Spring Framework
+
+- Swagger parts
+
+1- Swagger Editor
+
+2- Swagger UI
+
+
+### final project
+
