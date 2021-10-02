@@ -60,3 +60,32 @@ An implementation of the JPA Specification. You can access Hibernate’s documen
 
 - Inheritance
 
+
+## What are entities? 
+
+Entities are java objects that contains a collection of data and defines a relationship with the database. 
+
+POJO: "plain Old Java Object", A java object that contains data, but no methods that describe behavior
+
+Value Type: A Piece of data inside an Entity that represent a single value. 
+
+
+Note: Each entity type represent a table in the database and each value type represent a column in that database. 
+
+
+- We have to provide a <code> public no no argument constructor </code> to the entity If you created any kind of an argument constructor in the entity. IF you don't create your own argument constructor java will create one for you. 
+
+
+Basic Types
+Basic Types map a single database column to a single, non-aggregated Java type. Here are some examples of basic types:
+
+Java	                JDBC	    Hibernate type	        Registry Key
+java.lang.String	    VARCHAR	    StringType	                string
+java.lang.String	    NVARCHAR	StringNVarcharType	        nstring
+int, java.lang.Integer	INTEGER	    IntegerTypes	            int
+long, java.lang.Long	BIGINT	    LongType	                long
+
+
+- Identifiers
+
+
