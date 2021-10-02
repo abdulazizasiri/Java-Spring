@@ -89,3 +89,14 @@ long, java.lang.Long	BIGINT	    LongType	                long
 - Identifiers
 
 
+Valid identifier types are:
+
+- Any Java primitive type
+
+- Any primitive wrapper type (like Long, or Boolean)
+
+- A String
+
+- java.sql.Date or java.util.Date
+
+- java.math.BigDecimal or java.math.BigInteger
