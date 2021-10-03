@@ -141,3 +141,50 @@ public class Outfit {
 
 
 ```
+
+
+### Data Transfer Objects (DTOs)
+
+Data structures designed to represent the needs of the front end.
+
+
+- DTO Summary
+
+    Simplify and document interaction between front end and Controller.
+
+    Conceal database structures.
+
+    Limit the amount of data exchanged.
+
+    Customize display data to meet the needs of the front end.
+
+
+
+### JSONView
+
+
+### @JSONView Summary
+
+- Quickly specify which parts of Entities should be visible to which consumer.
+
+- Often a simple choice when controlling full stack.
+
+- Not as helpful when you need to combine data from multiple Entities.
+
+- Can require Entity updates if front end needs change.
+
+- Often grouped together in a Views class, containing interfaces such as ‘Public’, ‘Private’, or interfaces named for specific endpoint recipients.
+
+
+
+### Lesson Outline
+
+- Value vs. Entity types
+
+- BasicTypes in Java and JDBC
+
+- Identifiers
+
+- Relationships
+
+- Inheritance
