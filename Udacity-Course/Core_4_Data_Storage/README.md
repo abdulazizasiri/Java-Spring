@@ -100,3 +100,44 @@ Valid identifier types are:
 - java.sql.Date or java.util.Date
 
 - java.math.BigDecimal or java.math.BigInteger
+
+
+### Relationships
+
+- Types of Entity Associations
+
+- OneToOne: Single Entity on each side of the relationship.
+
+- OneToMany and ManyToOne: List of Entities on one side, single Entity on the other.
+
+- ManyToMany: Lists of Entities on both sides.
+
+
+Code that shows a one to many relationship
+
+```java 
+
+@Entity
+public class Person {
+   @Id
+   @GeneratedValue
+   private Long id;
+
+   @OneToMany
+   private List<Outfit> outfits;
+
+   /* rest of class */
+}
+
+@Entity
+public class Outfit {
+   @Id
+   @GeneratedValue
+   private Long id;
+
+   /* rest of class */
+}
+
+
+
+```
