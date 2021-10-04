@@ -14,11 +14,3 @@
 
 7- Difference between @Nationalized instead of @Type=nstring? 
 
-### Single Table Inheritance 
-
-- Inheritance vs Composition
-
-1- Compositions: Objects are related because one of them 'has-a' reference to the other one.
-
-2- Inheritance: Objects are related because one of them 'is-a' type of the other one. 
-
