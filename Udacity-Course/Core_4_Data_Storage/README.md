@@ -243,3 +243,17 @@ Instance: A specific copy of an Entity in program memory.
 - Removed: scheduled to be removed from the database. Java object still exists and has ID.
 
 
+### Entity Manager
+
+We use the entity manager to change Persistence states
+
+
+- Persist: Takes an Entity not yet managed. The Entity becomes managed and will be saved to the database.
+
+- Find: Looks up an id in the database and returns a managed Entity.
+
+- Merge: Updates an Entity that is in the detached state. Returns an instance of that Entity that is now managed. If Entity was not found in the database to update, persists Entity as a new row.
+
+- Remove: Detaches an entity and deletes it from the database.
+
+

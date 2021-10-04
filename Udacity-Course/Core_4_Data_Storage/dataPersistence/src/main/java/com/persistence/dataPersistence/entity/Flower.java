@@ -6,10 +6,12 @@ import javax.persistence.*;
 import java.math.BigDecimal;
 
 @Entity
+@Inheritance(strategy = InheritanceType.JOINED)
 @Table(name = "plant")
 public class Flower {
     @Id
     @GeneratedValue
+
     private Long id;
 
     @Nationalized // should use @Nationalized instead of @Type=nstring
