@@ -227,4 +227,19 @@ Data structures designed to represent the needs of the front end.
 
 Persistence Context: Describes the relationship between all the Entity instances in our program and their representations in the underlying database.
 
+Instance: A specific copy of an Entity in program memory.
+
+
+- Persistence Context Entity States
+
+
+- Transient: not associated with the persistence context. Often has not yet had an ID assigned.
+
+- Managed: persistent. Managed by the current persistence context. Changes to the entity will be reflected in the backing database.
+
+- Detached: previously managed. Occurs to all managed entities when persistence context ends.
+
+
+- Removed: scheduled to be removed from the database. Java object still exists and has ID.
+
 
