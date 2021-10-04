@@ -188,3 +188,43 @@ Data structures designed to represent the needs of the front end.
 - Relationships
 
 - Inheritance
+
+### Single Table Inheritance 
+
+- Inheritance vs Composition
+
+1- Compositions: Objects are related because one of them 'has-a' reference to the other one.
+
+2- Inheritance: Objects are related because one of them 'is-a' type of the other one. 
+
+
+### Lesson Outline
+
+- Persistence Context
+
+- Entity Manager
+
+- Queries and JPQL
+
+- Projections
+
+- Repository Pattern
+
+- Spring Data JPA
+
+- Transactions and Flushing
+
+
+### Definitions
+
+- Java Persistence API (JPA): A specification describing how to manage relational data
+
+- Hibernate: An implementation of the JPA Specification
+
+
+### Persistence Context
+
+
+Persistence Context: Describes the relationship between all the Entity instances in our program and their representations in the underlying database.
+
+
