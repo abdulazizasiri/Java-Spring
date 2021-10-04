@@ -401,3 +401,25 @@ interfaces the implments CrudRepository
 - Configure and initialize multiple data sources.
 
 - Configure data sources for unit tests.
+
+
+### Data Source vs. DataSource
+
+- Sometimes we use these words interchangeable, so just to clarify:
+
+- Data Source: A source of data, such as a database. DataSource: Java utility class that manages connections to physical or logical databases.
+
+### Data Source vs DataSource
+
+- Data Source:  A source of data, such as a database.
+
+- DataSource: A Java utility class that manages connections to physical or logical databases.
+
+
+### Types of DataSource objects
+
+1- Basic DataSource
+
+2- Connection-Pooling DataSource
+
+3- Distributed Transaction DataSource
