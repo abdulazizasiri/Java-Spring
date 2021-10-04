@@ -303,3 +303,37 @@ public void deleteExample(Long id) {
 - FetchType.EAGER
     
     Always retrieve the associated values as part of the Entity retrieval. This means the initial query for the entity retrieves this data.
+
+
+- By default, Fetch types
+
+<code> FetchType.LAZY: </code>
+
+1- @OneToMany
+
+2- @ManyToMany
+
+<code> FetchType.EAGER: </code>
+
+1- @ManyToOne
+
+2- @OneToOne
+
+
+## Cascading Persistence Operations
+
+
+
+### Querying: JPQL
+
+
+
+
+### Repository Pattern
+
+The Repository annotation identifies components in Spring that interact with the database. 
+
+Repository pattern is a way of thinking about your database as a collection of objects.
+
+### Spring Data JPA
+
