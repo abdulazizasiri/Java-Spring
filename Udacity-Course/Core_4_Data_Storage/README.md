@@ -388,3 +388,16 @@ interfaces the implments CrudRepository
 - Spring Data JPA
 
 - Transactions and Flushing
+
+
+### Data Sources
+
+### Lesson Summary
+
+- Set up an external database.
+
+- Connect to external databases.
+
+- Configure and initialize multiple data sources.
+
+- Configure data sources for unit tests.
