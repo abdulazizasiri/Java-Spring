@@ -423,3 +423,14 @@ interfaces the implments CrudRepository
 2- Connection-Pooling DataSource
 
 3- Distributed Transaction DataSource
+
+
+### pring.datasource.initialization-mode values
+
+- Embedded: Default. Initialization performed on embedded databases only.
+
+- Always: Initialization for both embedded and external databases.
+
+- Never: No initialization for either embedded or external databases.
+
+this code is set in the <code> application.properties </code>
