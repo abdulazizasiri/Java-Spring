@@ -434,3 +434,26 @@ interfaces the implments CrudRepository
 - Never: No initialization for either embedded or external databases.
 
 this code is set in the <code> application.properties </code>
+
+
+### Lesson 4: Persistence Without JPA
+
+
+
+- Lesson Outline
+
+   Initialization with SQL
+
+   Data Object vs. Entities
+
+   Data Access Objects (DAOs)
+
+   JdbcTemplate
+
+   Performance
+
+
+
+
+
+
