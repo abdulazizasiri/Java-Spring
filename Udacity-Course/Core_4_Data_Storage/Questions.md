@@ -14,3 +14,9 @@
 
 7- Difference between @Nationalized instead of @Type=nstring? 
 
+### JQuery 
+
+
+Jquery abstracted out the ways we select elements. There is only one way to select elements which is by using the <code> .querySelector() </codde> 
+
+
