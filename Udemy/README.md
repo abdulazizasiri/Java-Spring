@@ -7,6 +7,8 @@
 
 - generate a project
 
+- Done
+
 ### JPA Entites in a nutshell 
 
 JPA is java persistence API
