@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25f3c8e7-178e-43dd-88c2-49746eda5fff" name="Default Changelist" comment="" />
+    <list default="true" id="25f3c8e7-178e-43dd-88c2-49746eda5fff" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../../../AmigoSpringBoot/DataJpa/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../AmigoSpringBoot/DataJpa/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../SpringSecurity/spring-security" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../SpringSecurity/spring-security" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Core_3_Web_Services/clonedProject/udacity-java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Core_3_Web_Services/clonedProject/udacity-java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +25,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../../.." />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -31,6 +36,7 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="1yAUYNmw2aTcn18D7DO4M5XNXml" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />

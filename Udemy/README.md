@@ -1,4 +1,11 @@
 ## Spring Boot 
+- Building a project in spring requires using a tool
+
+- The tool is <code> Spring initilizr </code>
+
+- we can add all dependencies required for the project. 
+
+- generate a project
 
 ### JPA Entites in a nutshell 
 

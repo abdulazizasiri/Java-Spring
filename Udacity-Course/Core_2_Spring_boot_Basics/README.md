@@ -579,6 +579,7 @@ See figure mybatis-mappers.png
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Practical Example: User Credentials and Authentication
 
 
@@ -601,6 +602,8 @@ It's important to design databases with the assumption that they will someday be
 
 - Hashing: Modifying data before storing it with the intention of never returning it to its original form. The modified data will be compared to other modified data only.
 =======
+=======
+>>>>>>> 5c8420cc1e9607e997d75109ac3e8f792c1c8f37
 - Salt: random data that is combined with the input string when hashing so that the resultant hashed values are unique for each row. This means that two users with the same password would not have the same hash in the database.
 
 
@@ -636,6 +639,7 @@ It's important to design databases with the assumption that they will someday be
 
 ### Secuirty Interfaces
 
+<<<<<<< HEAD
 Not yet
 
 
@@ -694,3 +698,8 @@ This is calleed <Code> Test-Driven Development </code>
 
 
 - You must understand the state of the external envs
+=======
+
+
+
+>>>>>>> 5c8420cc1e9607e997d75109ac3e8f792c1c8f37
