@@ -29,4 +29,10 @@ We are are going to use *-* which refers to a many to many relationship.
 4- Build the relationships
 
 
+##  Id
+
+Id in Spring Data JPA should be Long, so we can assign them a null value when creating a new record. 
+
+
+
 
