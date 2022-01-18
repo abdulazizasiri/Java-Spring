@@ -1,4 +1,4 @@
-package com.aziz.learningspring.spring5webapp;
+package guru.springframework.spring5webapp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
