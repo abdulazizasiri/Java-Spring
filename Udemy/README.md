@@ -1,4 +1,13 @@
 ## Spring Boot 
+- Building a project in spring requires using a tool
+
+- The tool is <code> Spring initilizr </code>
+
+- we can add all dependencies required for the project. 
+
+- generate a project
+
+- Done
 
 ### JPA Entites in a nutshell 
 
@@ -20,21 +29,10 @@ We are are going to use *-* which refers to a many to many relationship.
 4- Build the relationships
 
 
+##  Id
 
-### Semantic Elements
+Id in Spring Data JPA should be Long, so we can assign them a null value when creating a new record. 
 
-Structure elements allow you to organize the main parts of your page. They usually contain other HTML elements.
 
-Here’s what a typical webpage could include:
-
-- <code>  <header> </code> as the first element of the page, that can include the logo and the tagline.
-
-- <code>  <nav> </code>  as a list of links that go to the different pages of the website.
-
-- <code> <h1> </code> as the title of the page.
-
-- <code>  <article> </code> as the main content of the page, like a blog post.
-
-- <code>  <footer> </code> as the last element of the page, located at the bottom.
 
 

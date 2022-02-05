@@ -578,6 +578,32 @@ See figure mybatis-mappers.png
 
 
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+### Practical Example: User Credentials and Authentication
+
+
+Secure Data practice
+
+
+1- Assume your database will be breached, so we cannot store our 
+
+data in plain-text. We have to use an encryption method for our sensetive data. 
+
+
+- Authentication in a web application
+
+
+User support is a common feature in web applications, which means that a user can register an account and use credentials to login to the application in the future.
+
+It's important to design databases with the assumption that they will someday be breached, and so we cannot store passwords or other secret credentials in plain text. Two approaches to storing passwords are:
+
+- Encryption: Modifying data before storing it, with the intention of using another algorithm to return the data to its original form once it needs to be used.
+
+- Hashing: Modifying data before storing it with the intention of never returning it to its original form. The modified data will be compared to other modified data only.
+=======
+=======
+>>>>>>> 5c8420cc1e9607e997d75109ac3e8f792c1c8f37
 - Salt: random data that is combined with the input string when hashing so that the resultant hashed values are unique for each row. This means that two users with the same password would not have the same hash in the database.
 
 
@@ -613,6 +639,67 @@ See figure mybatis-mappers.png
 
 ### Secuirty Interfaces
 
+<<<<<<< HEAD
+Not yet
+
+
+### Testing with JUnit and Selenium
+
+
+Lesson Outline
+
+- Testing with JUnit: We introduce JUnit, the standard testing and assertion framework for Java. We learn how to write new tests and check out assumptions by using JUnit's extensive library of assertion methods.
+
+- JUnit in Situ: We look at how we can use IntelliJ (or any other IDE) to run tests, debug errors, and get reports about code coverage.
+
+- Selenium/WebDriver: We introduce Selenium, a tool for browser automation, through its Java API, selenium-java. We look at how to write Selenium scripts to simulate user actions in a browser at a high level.
+
+- JUnit and Selenium: We discuss how to use Selenium's java API inside of JUnit tests, which opens the door to an advanced technique: automated user testing.
 
 
 
+It is important to do testing the Right Way
+
+
+- Harder than it looks
+
+- Requires organization and planning
+
+- Most effective to write tests before writing code
+
+This is calleed <Code> Test-Driven Development </code>
+
+- this is caled <code> red then green</code>
+
+### Unit test 
+
+
+- It is the simplest and lowest level test
+
+- A unit test test one step of the user story
+
+- Unit test should test <code> invariants </code> (things do not change)
+
+- IT (integeration testing) should testsuser actions and process flows
+
+- Use unit test to test app behavior with inputs including edge cases (like <code> null </code>)
+
+
+- USe IT test to check app state updating throughout execution
+
+
+### Always consider the scope
+
+
+- Unit tests usually only need access to platform runtime
+
+
+- IT tests may need access to other components (like db, beowser)
+
+
+- You must understand the state of the external envs
+=======
+
+
+
+>>>>>>> 5c8420cc1e9607e997d75109ac3e8f792c1c8f37
