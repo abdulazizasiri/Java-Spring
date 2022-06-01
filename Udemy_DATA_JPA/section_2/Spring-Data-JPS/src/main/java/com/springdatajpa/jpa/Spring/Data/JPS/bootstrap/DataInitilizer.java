@@ -7,6 +7,9 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 
+// 12500 * 30
+
+
 @Component
 public class DataInitilizer  implements CommandLineRunner {
 
