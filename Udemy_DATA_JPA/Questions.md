@@ -10,4 +10,5 @@
 - What is the difference between Spring Data JPA and JPA? 
 
 
+- Types of GenerativeValue in Spring data JPA in Ids
 
