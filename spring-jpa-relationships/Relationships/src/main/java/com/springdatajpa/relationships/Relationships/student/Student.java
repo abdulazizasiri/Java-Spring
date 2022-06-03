@@ -1,5 +1,6 @@
 package com.springdatajpa.relationships.Relationships.student;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.springdatajpa.relationships.Relationships.course.Course;
 
 import javax.persistence.*;
@@ -16,6 +17,7 @@ public class Student {
 
     private String name;
 
+    @JsonIgnore
     @ManyToMany(mappedBy = "enrolledStudents")
     private Set<Course> courses = new HashSet<>();
 

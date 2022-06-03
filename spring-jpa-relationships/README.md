@@ -17,3 +17,11 @@ We are going to use an example of a university courses and their relationships w
 
 The course has many students. 
 
+
+### The recursive issue in Spring Data JPA
+
+
+- Just add Json ignore. 
+
+
+### 

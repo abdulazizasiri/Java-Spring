@@ -1,10 +1,13 @@
 package com.springdatajpa.relationships.Relationships.teacher;
 
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.springdatajpa.relationships.Relationships.course.Course;
+
+import javax.persistence.*;
+import java.nio.file.attribute.AclEntryType;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 public class Teacher {
@@ -12,6 +15,12 @@ public class Teacher {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long Id;
+
+    // Teacher Can teach many Courses
+    //  One teacher can teach multiple courses
+    @JsonIgnore
+    @OneToMany(mappedBy = "teacher") // One from within this
+    Set<Course>  teachingCourses = new HashSet<>();
 
     private String name;
 
