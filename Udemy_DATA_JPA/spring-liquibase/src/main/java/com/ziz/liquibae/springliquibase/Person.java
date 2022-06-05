@@ -3,19 +3,42 @@ package com.ziz.liquibae.springliquibase;
 
 import javax.persistence.*;
 
-@Entity
+
 @Table(name = "persons")
+@Entity
 public class Person {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name = "id")
   private  Long id;
+
   @Column(name = "name")
   private String name;
 
   @Column(name = "height")
   private double height;
 
-  public Person( String name, double height) {
+
+  @Column(name = "address")
+  private String address;
+
+  public Long getId() {
+    return id;
+  }
+
+  public void setId(Long id) {
+    this.id = id;
+  }
+
+  public String getAddress() {
+    return address;
+  }
+
+  public void setAddress(String address) {
+    this.address = address;
+  }
+
+  public Person(String name, double height) {
     this.name = name;
     this.height = height;
   }
