@@ -19,9 +19,15 @@ public class Person {
   private double height;
 
 
+  @Column(name = "age")
+  private int age;
+
+
   @Column(name = "address")
   private String address;
 
+  @Column(name = "education")
+  private String education;
   public Long getId() {
     return id;
   }
