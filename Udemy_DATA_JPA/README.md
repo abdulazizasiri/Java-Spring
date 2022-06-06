@@ -140,12 +140,12 @@
 ### File structure of 
 
 
---------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
 
 Youtube: Liquibase 
 
 
---------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
 
 
 ### Terminology 
@@ -154,6 +154,40 @@ Youtube: Liquibase
 - Changeset: describes a set of changes that liquibase executes within one transaction. 
 
 To enable successful rollbacks and keep track of the executed changesets, each changeset is identified by Author name and an id. 
+
+
+
+
+### Flyway: Terminology 
+
+
+- Migrate - Migrate to latest version
+
+- Clean - Drops all databases objects - NOT FOR PRODUCTION USE
+
+- Info - Prints info about migration 
+
+- Validate - Validates applied migrations against available 
+
+- Undo - Reverts most recentely applied migration
+
+- Baseline - Baseline an existing database
+
+- Repair - Used to fix problems with schema history table. 
+
+## Running Flyway CLI 
+
+CLI available for windows, MacOS, and Linux.
+
+    - Not covered in this course -- :(
+
+ Maven / Gradle Plugins 
+
+     - Not covered in this course -- :(
+
+Spring Boot - Will run flyway on startup to update configured database to latest changeset. 
+
+
 
 
 
